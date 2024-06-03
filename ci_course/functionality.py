@@ -33,7 +33,7 @@ def minimum(*args):
         The minimum
     """
     if not any([isinstance(arg, numbers.Real) for arg in args]):
-        assert ci_course.minimum("hi", "there") is None
+        return
 
     the_min = float("inf")
     for arg in args:
